@@ -181,10 +181,9 @@ async function run() {
         console.error(error.message);
     }
     finally {
-        //await client.close();       
+        // await client.close();       
     }
 }
-
 run();
 
 const port = process.env.PORT || 5000;
