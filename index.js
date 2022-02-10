@@ -148,6 +148,7 @@ async function run() {
             res.status(200).json(result);
         })
 
+
         app.patch('/update-student-info', async (req, res) => {
             const { studentId } = req.query;
             const result = await allStudent.updateOne(
